@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10sp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile"/>
+
+    <TextView
+        android:id="@+id/userTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Utilisateur de l'application"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_below="@+id/imgIv"/>
+
+    <TextView
+        android:id="@+id/resumeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resume"
+        android:gravity="left"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/userTv"
+        android:paddingLeft="15sp"
+        android:layout_marginTop="25sp"/>
+    <TextView
+        android:id="@+id/rdvTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rendez vous"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:layout_below="@+id/resumeTv"
+        android:paddingLeft="15sp"/>
+    <TextView
+        android:id="@+id/suiTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suivi"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:layout_below="@+id/rdvTv"
+        android:paddingLeft="15sp"/>
+    <TextView
+        android:id="@+id/notTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:layout_below="@+id/suiTv"
+        android:paddingLeft="15sp"/>
+    <TextView
+        android:id="@+id/nbrTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:gravity="right"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/userTv"
+        android:paddingLeft="15sp"
+        android:layout_marginTop="25sp"/>
+    <TextView
+        android:id="@+id/nbr_rdvTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:layout_below="@+id/nbrTv"
+        android:paddingLeft="15sp"/>
+    <TextView
+        android:id="@+id/nbr_suiTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:layout_below="@+id/nbr_rdvTv"
+        android:paddingLeft="15sp"/>
+    <TextView
+        android:id="@+id/nbr_notTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:layout_below="@+id/nbr_suiTv"
+        android:paddingLeft="15sp"/>
+    <RadioButton
+        android:id="@+id/rdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rendez vous"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:layout_below="@+id/nbr_notTv"/>
+    <RadioButton
+        android:id="@+id/urg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urgence"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:layout_below="@+id/rdv"/>
+    <RadioButton
+        android:id="@+id/sui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivui"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:layout_below="@+id/urg"/>
+
+    <ImageView
+        android:id="@+id/imgAn"
+        android:layout_width="209dp"
+        android:layout_height="77dp"
+        android:layout_below="@+id/nbr_notTv"
+
+        android:layout_marginTop="7dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/android" />
+    <Button
+        android:id="@+id/annulerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annuler"
+        android:gravity="left"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_below="@+id/imgAn"/>
+    <Button
+        android:id="@+id/envoyerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        android:gravity="left"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="165sp"
+        android:textSize="20sp"
+        android:layout_below="@+id/imgAn"/>
+
+
+
+
+</RelativeLayout>
